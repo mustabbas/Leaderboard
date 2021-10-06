@@ -1,13 +1,13 @@
 import './styles.css';
 import { addScore, getData, createTable } from './score.js';
 
-const add = document.querySelector('.add');
-const user = document.querySelector('.name');
-const score = document.querySelector('.scoreValue');
+const formElement= document.querySelector('form');
+
 const refresh = document.querySelector('.refresh');
 
-add.addEventListener('click', () => {
-  addScore(user.value, score.value);
+formElement.addEventListener('submit', (e) => {
+  e.preventDefault();
+  addScore(e.target.name.value, e.target.score.value);
 });
 
 refresh.addEventListener('click', () => {

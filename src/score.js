@@ -1,17 +1,19 @@
 function createTable() {
   const localScore = JSON.parse(localStorage.getItem('scoreArray'));
-  localScore.forEach((element, index) => {
-    const tdElement = document.getElementById(index);
-    if (!tdElement) {
-      const table = document.querySelector('table');
-      const tr = document.createElement('tr');
-      const td = document.createElement('td');
-      td.innerHTML = `${element.user}: ${element.score}`;
-      td.id = index;
-      tr.appendChild(td);
-      table.appendChild(tr);
-    }
-  });
+  if (localScore !== null) {
+    localScore.forEach((element, index) => {
+      const tdElement = document.getElementById(index);
+      if (!tdElement) {
+        const table = document.querySelector('table');
+        const tr = document.createElement('tr');
+        const td = document.createElement('td');
+        td.innerHTML = `${element.user}: ${element.score}`;
+        td.id = index;
+        tr.appendChild(td);
+        table.appendChild(tr);
+      }
+    });
+  }
 }
 
 function saveTolocal(data) {
