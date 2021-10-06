@@ -1,7 +1,7 @@
 import './styles.css';
 import { addScore, getData, createTable } from './score.js';
 
-const formElement= document.querySelector('form');
+const formElement = document.querySelector('form');
 
 const refresh = document.querySelector('.refresh');
 
