@@ -49,9 +49,6 @@ tr:nth-child(even) { background-color: #f2f2f2; }
 .form {
   width: 45%;
   margin: 20px;
-}
-
-form {
   height: 40%;
   display: flex;
   flex-direction: column;
