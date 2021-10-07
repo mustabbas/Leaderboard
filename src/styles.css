@@ -1,6 +1,12 @@
 
 .header {
-  margin: 20px;
+  margin: 30px;
+}
+
+.header h1 {
+  border: 2px solid #888;
+  padding: 10px;
+  text-align: center;
 }
 
 .body-wrapper {
@@ -12,7 +18,6 @@
 
 .score {
   width: 45%;
-  margin: 20px;
 }
 
 .refresh {
@@ -27,11 +32,13 @@
 }
 
 .refresh button {
+  background-color: #fff;
   padding: 10px 20px;
   font-weight: bold;
   border: 2px solid black;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 3px 3px;
 }
 
 table {
@@ -48,8 +55,12 @@ tr:nth-child(even) { background-color: #f2f2f2; }
 
 .form {
   width: 45%;
-  margin: 20px;
-  height: 40%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
   display: flex;
   flex-direction: column;
 }
@@ -73,6 +84,27 @@ input {
   cursor: pointer;
   align-self: end;
   font-weight: bold;
+  box-shadow: 3px 3px;
+}
+
+.loading {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+}
+
+.bodydispear {
+  opacity: 0.1;
+}
+
+.displayNone {
+  display: none;
+}
+
+.card {
+  border: 2px solid #888;
+  padding: 20px;
+  box-shadow: 10px 10px #ccc;
 }
 
 @media (max-width: 768px) {
@@ -92,5 +124,10 @@ input {
 
   .refresh h2 {
     font-size: 24px;
+  }
+
+  .card {
+    padding: 10px;
+    margin-bottom: 30px;
   }
 }

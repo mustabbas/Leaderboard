@@ -1,9 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-Leaderboard
+# Leaderboard
 > This project for Leader board.
 
+![screenshot](./app_screenshotMobile.png)
 ![screenshot](./app_screenshot.png)
 
 
