@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <h1 class="loading displayNone">Loading.....</h1>
     <div class="header">
         <h1>Leaderboard</h1>
     </div>
     <div class="body-wrapper">
-        <div  class="score">
+        <div  class="score card">
             <div class="refresh">
                 <h2>Recent scores</h2>
                 <button class="refresh">Refresh</button>
@@ -20,11 +21,11 @@
             <table>
             </table>
         </div>
-        <div class="form">
+        <div class="form card">
             <h2>Add your score</h2>
             <form>
-                <input class="name" type="text" name="name" placeholder="your name" required/>
-                <input class="scoreValue" type="number" name="score" placeholder="your score" required/>
+                <input class="name" type="text" name="name" placeholder="your name" maxlength="10" required/>
+                <input class="scoreValue" type="number" name="score" placeholder="your score"  oninput="this.value=this.value.slice(0,3)" required/>
                 <button type="submit" class="add">Submit</button>
             </form>
         </div>

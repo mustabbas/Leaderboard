@@ -4,6 +4,7 @@
 Leaderboard
 > This project for Leader board.
 
+![screenshot](./app_screenshotMobile.png)
 ![screenshot](./app_screenshot.png)
 
 
